@@ -1,0 +1,16 @@
+nav{
+    padding-right: 1.25rem;
+    ul{
+        display: flex;
+        gap: 1.25rem;
+        li{
+        list-style: none;
+            a{
+                color: map-get($colores, color3 );
+                &:hover{
+                    color: map-get($colores, color2 );
+                }
+            }
+        }
+    }
+}

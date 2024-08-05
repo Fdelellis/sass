@@ -1,0 +1,22 @@
+.boton-1{
+    padding: 20px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: .3125rem;
+    &:hover{
+        box-shadow: 1px 1px 5px pink;
+    }
+}
+
+.boton-2{
+    @extend .boton-1;
+    background-color: red;
+    color: black;
+}
+
+
+.boton-3{
+    @extend .boton-2;
+    padding: 10px 20px;
+}

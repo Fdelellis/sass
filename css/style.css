@@ -1,0 +1,93 @@
+/** mixins nos permite generar bloques de codigo que pueden funcionar de manera estatica como dinamica 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+@font-face {
+  font-family: "american";
+  src: url("../Assets/fonts/American Captain.ttf"); }
+
+/*Variables
+definicion en programacion: es un espacio de memoria reservado, que sirve para alojar un ipo de dato*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; }
+  .header img {
+    width: 6.25rem; }
+  .header nav {
+    padding-right: 1.25rem; }
+    .header nav ul {
+      display: flex;
+      gap: 1.25rem; }
+      .header nav ul li {
+        list-style: none; }
+        .header nav ul li a {
+          color: violet; }
+          .header nav ul li a:hover {
+            color: purple; }
+
+.main-index {
+  background-color: #e6df09; }
+
+.section-principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
+  .section-principal div {
+    width: 25rem; }
+    .section-principal div h1 {
+      color: purple;
+      font-size: 3.125rem;
+      font-family: "american"; }
+    .section-principal div p {
+      font-size: 1.5625rem;
+      color: purple; }
+    .section-principal div button {
+      padding: 20px 30px;
+      border: none;
+      background-color: purple;
+      color: white;
+      border-radius: .3125rem; }
+      .section-principal div button:hover {
+        box-shadow: 1px 1px 5px pink; }
+
+.boton-1, .boton-2, .boton-3 {
+  padding: 20px 30px;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: .3125rem; }
+  .boton-1:hover, .boton-2:hover, .boton-3:hover {
+    box-shadow: 1px 1px 5px pink; }
+
+.boton-2, .boton-3 {
+  background-color: red;
+  color: black; }
+
+.boton-3 {
+  padding: 10px 20px; }
+
+nav {
+  padding-right: 1.25rem; }
+  nav ul {
+    display: flex;
+    gap: 1.25rem; }
+    nav ul li {
+      list-style: none; }
+      nav ul li a {
+        color: pink; }
+        nav ul li a:hover {
+          color: violet; }

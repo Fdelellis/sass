@@ -1,0 +1,30 @@
+.main-index{
+    background-color: $colorPrincipal;
+}
+
+.section-principal{
+    @include flex(row,wrap,space-between,none,15px);
+
+    div{
+        width: 25rem;
+        h1{
+            color: $colorLetras;
+            font-size: 3.125rem;
+            font-family: "american";
+        }
+        p{
+            font-size: 1.5625rem;
+            color: $colorLetras;
+        }
+        button{
+            padding: 20px 30px;
+            border: none;
+            background-color: purple;
+            color: white;
+            border-radius: .3125rem;
+            &:hover{
+                box-shadow: 1px 1px 5px pink;
+            }
+        }
+    }
+}
